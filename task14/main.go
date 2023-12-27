@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func PrintType(v interface{}) {
-	fmt.Printf("%T\n", v)
+	fmt.Println(reflect.TypeOf(v))
 }
 
 func main() {
